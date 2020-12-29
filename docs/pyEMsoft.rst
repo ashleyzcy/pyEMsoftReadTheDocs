@@ -25,16 +25,14 @@ How to use the pyEMsoft module?
 .. role:: python(code)
    :language: python 
 
-In a terminal, cd into the folder containing the shared library (mac: .so file and pyEMsoft.py). Run Python interpreter and then :python:`import pyEMsoft`. For Python scripts saved in a different folder to the generated shared library and pyEMsoft.py (e.g. unittests folder). The directory must be set first to the point to the correct folder.In an example below, the shared library and the pyEMsoft.py are saved in a different folder (one folder level up).In addition, some simple tools dedicated to :python:`pyEMsoft` have also been created and are saved inside a separate module named :python:`pyEMsoftTools`. Depending on the need, some other popular modules will also be imported such as the :python:`numpy`, :python:`math`, :python:`unittest`, :python:`random`, etc. 
-
+Install pyEMsoft as a python package called EMsoft and then one can easily import the pyEMsoft module from any directoary.
 
 .. code-block:: python
 
-   import sys
-   sys.path.append('../')
-   import pyEMsoft
-   from pyEMsoftTools import Tools
-   import numpy as np
+    # import the pyEMsoft module
+    from EMsoft import pyEMsoft
+    # import utilitymodule
+    from EMsoft import pyEMsoftTools 
 
 
 
@@ -479,9 +477,7 @@ Example 1: Make a crystal
 
 .. code-block:: python
 
-    import sys
-    sys.path.append('../')
-    import pyEMsoft
+    from EMsoft import pyEMsoft
     # define the unitcell usinge typedefs
     LatCell = pyEMsoft.typedefs.unitcell()
     # set the crystal system and lattice parameters/angles
@@ -521,10 +517,8 @@ In the following example, several routines in the Crystal module are utilized to
 
 .. code-block:: python
 
-    import sys
-    sys.path.append('../')
-    import pyEMsoft
-    from pyEMsoftTools import Tools
+    from EMsoft import pyEMsoft
+    from EMsoft.pyEMsoftTools import Tools
     import numpy as np
     import math
 
