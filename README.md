@@ -8,7 +8,7 @@
 > pyEMsoft is a Python interface to the many Fortran types and subroutines in 
 [EMsoft](https://github.com/EMsoft-org/EMsoft).
 
-> An extension module is created automatically with [f90wrap](https://github.com/marcdegraef/f90wrap) that can be directly imported in Python `import pyEMsoft`.
+> An extension module is created automatically with [f90wrap](https://github.com/marcdegraef/f90wrap) that can be directly imported in Python `from EMsoft import pyEMsoft`.
 
 ## Installation
 
