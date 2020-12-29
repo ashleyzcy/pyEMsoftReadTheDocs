@@ -14,12 +14,24 @@
 
 > Details on installation can be found in [readthedocs](https://pyemsoftreadthedocs.readthedocs.io/en/latest/Installation.html).
 
-- Install [EMsoft SDK](https://github.com/EMsoft-org/EMsoftSuperbuild)
+- Install [EMsoft_SDK](https://github.com/EMsoft-org/EMsoftSuperbuild)
+- Clone [EMsoftData](https://github.com/EMsoft-org/EMsoftData)
 - Compile [EMsoft](https://github.com/EMsoft-org/EMsoft) onto your local computer
-- Install python 3.x (other python packages are needed to run examples include: jupyter notebook, pyyaml, scikit-image, h5py, matplotlib)
-- Install [f90wrap](https://github.com/marcdegraef/f90wrap) (windows support is currently being looked at)
-- Use `run_pyEMsoft.sh` (located in the EMsoftBuild folder) to generate pyEMsoft module
+- Install python 3.x (other python packages are needed to run examples include: jupyter notebook, pyyaml, scikit-image, h5py, matplotlib, ipywidgets)
+- Install [f90wrap](https://github.com/marcdegraef/f90wrap) (WSL/Ubuntu/macOS)
+- Use `run_pyEMsoft.sh` (located in the EMsoft Build folder) to generate pyEMsoft extension module (*.so and pyEMsoft.py)
+- Install the pyEMsoft in the pyEMsoftBuild folder with `python setup.py install`
 
+## How to use?
+
+To import **pyEMsoft** into Python program:
+
+```python
+# import the pyEMsoft module
+from EMsoft import pyEMsoft
+# import utility module
+from EMsoft import pyEMsoftTools
+```
 
 ## Functions
 
@@ -56,6 +68,9 @@ EMsoft started as a source code base used for the creation of all figures in the
 - Joey Kleingers
 - Håkon Wiik Ånes
 - McLean Echlin
+- Zihao Ding
+- Marcus Ochsendorf
+- Christian Kurniawan
 
 ## Financial Support
 
