@@ -1,5 +1,5 @@
 # some simple tools to have when working with pyEMsoft module
-#from EMsoft import pyEMsoft
+import pyEMsoft
 import numpy as np
 #import h5py as h5
 #import os
